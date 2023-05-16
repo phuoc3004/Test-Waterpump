@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Turn On" />
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Turn Off" />
+
+    <TextView
+        android:id="@+id/tvSensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Sensor Value: -" />
+
+</RelativeLayout>
