@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 while (!Thread.currentThread().isInterrupted()) {
                     try {
                         Thread.sleep(1000);  // Update every 1 second
-                        String url = "http://" + ESP8266_IP_ADDRESS + "/";
+                        String url = "http://" + ESP8266_IP_ADDRESS + "/sensor";
                         new HttpRequestTask().execute(url);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
