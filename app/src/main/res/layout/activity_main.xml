@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="32dp"
     tools:context=".MainActivity">
 
     <Button
@@ -10,7 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Turn On" />
+        android:text="Turn On"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnOff"
@@ -19,7 +20,8 @@
         android:layout_below="@id/btnOn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Turn Off" />
+        android:text="Turn Off"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tvSensorValue"
@@ -28,6 +30,7 @@
         android:layout_below="@id/btnOff"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Sensor Value: -" />
+        android:text="Sensor Value: -"
+        android:textSize="24sp" />
 
 </RelativeLayout>
