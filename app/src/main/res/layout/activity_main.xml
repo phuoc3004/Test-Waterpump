@@ -23,11 +23,41 @@
         android:text="Turn Off"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/btn2Seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="2 Seconds"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn5Seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn2Seconds"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="5 Seconds"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn10Seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn5Seconds"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="10 Seconds"
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/tvSensorValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnOff"
+        android:layout_below="@id/btn5Seconds"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="Sensor Value: -"

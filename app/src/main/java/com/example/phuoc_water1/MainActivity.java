@@ -2,7 +2,6 @@ package com.example.phuoc_water1;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnOn;
     private Button btnOff;
+    private Button btn2Seconds;
+    private Button btn5Seconds;
+    private Button btn10Seconds;
     private TextView tvSensorValue;
 
     @Override
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnOn = findViewById(R.id.btnOn);
         btnOff = findViewById(R.id.btnOff);
+        btn2Seconds = findViewById(R.id.btn2Seconds);
+        btn5Seconds = findViewById(R.id.btn5Seconds);
+        btn10Seconds = findViewById(R.id.btn10Seconds);
         tvSensorValue = findViewById(R.id.tvSensorValue);
 
         btnOn.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +48,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendRequest("/off");
+            }
+        });
+
+        btn2Seconds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendRequest("/2seconds");
+            }
+        });
+
+        btn5Seconds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendRequest("/5seconds");
+            }
+        });
+
+        btn10Seconds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendRequest("/10seconds");
             }
         });
 
