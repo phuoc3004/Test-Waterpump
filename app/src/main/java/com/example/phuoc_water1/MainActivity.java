@@ -16,7 +16,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String ESP8266_IP_ADDRESS = "192.168.1.102";  // Replace with your ESP8266 IP address
+    private static final String ESP8266_IP_ADDRESS = "192.168.1.218";  // Replace with your ESP8266 IP address
 
     private Button btnOn;
     private Button btnOff;

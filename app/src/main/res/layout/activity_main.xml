@@ -57,7 +57,7 @@
         android:id="@+id/tvSensorValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn5Seconds"
+        android:layout_below="@id/btn10Seconds"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="Sensor Value: -"
